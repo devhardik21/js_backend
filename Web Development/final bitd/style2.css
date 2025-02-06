@@ -1,0 +1,1019 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+.title1{
+    color: #312d2d;
+    font-size: 51.2px;
+}
+.readm{
+    color: #312d2d;
+}
+
+.main{
+    width: 100%;
+    background: linear-gradient(to top,rgba(4,9,30,0.7), rgba(4,9,30,0.7)), url(bitd.jpeg) ;
+    background-size: cover;
+    height: 100vh;
+}
+
+.navbar{
+    width: 1200px;
+    height: 75px;
+    margin: auto;
+}
+
+.icon{
+    width: 200px;
+    float: left;
+    height: 70px;
+}
+
+.logo{
+    color: #ff7200;
+    font-size: 35px;
+    font-family: Arial;
+    padding-left: 20px;
+    float: left;
+    padding-top: 10px;
+    margin-top: 5px
+}
+/*
+.menu{
+    width: 400px;
+    float: right;
+    height: 70px;
+}
+
+ul{
+    float: left;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+ul li{
+    list-style: none;
+    margin-left: 62px;
+    margin-top: 27px;
+    font-size: 14px;
+}
+
+ul li a{
+    text-decoration: none;
+    color: #fff;
+    font-family: Arial;
+    font-weight: bold;
+    transition: 0.4s ease-in-out;
+}
+
+ul li a:hover{
+    color: #ff7200;
+}
+*/
+
+.menu{
+    flex: 1;
+    text-align: right;
+    width: 400px;
+    float: right;
+    height: 70px;
+}
+
+.menu ul {
+    display: flex;  /* Horizontal layout for the list items */
+    list-style: none;
+    font-family: "Josefin Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+}
+
+.menu ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+}
+
+.menu ul li a{
+    color: white;
+    text-decoration: none;
+    font-size: 13px;    
+}
+
+.menu ul li::after{
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: #f44336;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+
+.menu ul li:hover::after{
+    width: 100%;
+}
+
+.text-box{
+    width: 90%;
+    color: white;
+   /* position: absolute;*/
+    padding-top: 20px;
+    padding-bottom: 20px;
+    transform: translate(-50,-50);
+    text-align: center;
+    margin: auto;
+}
+
+.text-box h1{
+    margin-top: 100px;
+    font-size: 62px;
+    margin-bottom: 20px;
+    font-family: "Josefin Slab", serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+}
+
+.text-box{
+    margin-top: 100px;
+    font-size: 18px;
+}
+
+.hero-btn{
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+    border: 1px solid white;
+    padding: 12px 34px;
+    font-size: 16px;
+    background: transparent;
+    position: relative;
+    cursor: pointer;    
+}
+
+.hero-btn:hover{
+    border: 1px solid #f44336;
+    background: #f44336;
+    transition: 1s;
+}
+nav .fa{
+    display: none;
+}
+
+@media(max-width: 700px){
+    .text-box h1{
+        font-size: 20px;
+    }
+    .nav-links ul li{
+        display: block;
+    }
+    .nav-links{
+        position: absolute;
+        background: #f44336;
+        height: 100vh;
+        width: 200px;
+        top: 0;
+        right: -200px;
+        text-align: left;
+        z-index: 2;
+        transition: 1s;
+    }
+    nav .fa{
+        display: block;
+        color: #fff;
+        margin: 10px;
+        font-size: 22px;
+        cursor: pointer;
+    }
+
+    .nav-links ul{
+        padding: 30px;
+
+    }
+}
+
+.course{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 100px;
+}
+
+h1{
+    font-size: 36px;
+    font-weight: 600;
+}
+
+p{
+    color:#777;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 22px;
+    padding: 10px;
+}
+
+.row{
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.course-col{
+    flex-basis: 31%;
+    background: #ece8c3;
+    border-radius: 10px;
+    border-bottom: 5%;
+    padding: 28px 12px;
+    box-sizing: border-box;
+}
+
+.course-col ul li{
+    padding: 3px;
+    text-decoration: none;
+    list-style-type: none;
+}
+.h3{
+    text-align: center;
+    font-weight: 600;
+    margin: 10px 0;
+}
+
+.course-col:hover{
+    box-shadow: 0 0 20px 0px rgba(0,0,0,0.2);
+}
+
+.text-uppercase line-bottom-theme-colored-2 mt-0 line-height-1{
+    font-size: 10px;
+}
+
+.target{
+    font-size: 15px;
+}
+
+.row1{
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.facility-section {
+    margin-top: 50px;
+    padding: 20px;
+}
+
+.facility{
+    clear: both;
+}
+
+.facility{
+    display: block;
+    margin-top: 50px;
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 100px;
+}
+
+.facility-col{
+    flex-basis: 35%;
+    background: #ece8c3;
+    border-radius: 10px;
+    border-bottom: 5%;
+    padding: 28px 12px;
+    box-sizing: border-box;
+}
+
+.title1{
+    font-size: 20px;
+}
+
+/* General Styles */
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+.facilities {
+    background-color: #f8f9fa; /* Light background */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adds depth */
+    margin-bottom: 30px;
+}
+
+.facilities-band {
+    font-size: 24px;
+    font-weight: bold;
+    color: #007BFF;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+/* Accordion Styles */
+.accordion {
+    border-top: 1px solid #e0e0e0;
+}
+
+.accordion-item {
+    border-bottom: 1px solid #e0e0e0;
+    padding: 10px 0;
+}
+
+.accordion-item a {
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 500;
+    color: #333;
+    padding: 10px 15px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    position: relative;
+    display: block;
+    box-shadow: 0 0 0 rgba(0, 0, 0, 0); /* Invisible by default */
+}
+
+.accordion-item a:hover {
+    color: #0056b3; /* Darker on hover */
+}
+
+.accordion-content {
+    display: none;
+    padding-left: 20px;
+    font-size: 16px;
+    color: #666;
+}
+
+/* Hover Effect for Accordion Header */
+.accordion-item:hover {
+    background-color: #f0f0f0;
+    cursor: pointer;
+}
+
+/* Show the active accordion content */
+.accordion-item.active .accordion-content {
+    display: block;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .facilities {
+        padding: 15px;
+    }
+}
+
+
+/* General styles */
+body {
+    font-family: 'Poppins', sans-serif; /* A modern, clean font */
+}
+
+/* Style for the navigation menu */
+#menu-hot_links {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: block;
+    flex-wrap: wrap;
+    justify-content: center; /* Center-align items */
+    background-color: #f8f9fa; /* Light background */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    border-radius: 8px;
+    padding: 20px; /* Adds breathing room around the menu */
+}
+
+/* Style for each menu item */
+#menu-hot_links li {
+    margin: 0 20px; /* Space between menu items */
+    position: relative;
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth hover animation */
+}
+
+/* Link styling */
+#menu-hot_links li a {
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 500;
+    color: #333;
+    padding: 10px 15px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    position: relative;
+    display: block;
+    box-shadow: 0 0 0 rgba(0, 0, 0, 0); /* Invisible by default */
+}
+
+/* Hover effect for menu items */
+#menu-hot_links li a:hover {
+    background-color: #007BFF; /* Main hover color */
+    color: #fff; /* White text on hover */
+    box-shadow: 0 8px 15px rgba(0, 123, 255, 0.3); /* Hover shadow */
+    transform: translateY(-3px); /* Slight lift effect */
+}
+
+/* Hover effect for li (wrap around effect) */
+#menu-hot_links li:hover {
+    transform: scale(1.05); /* Zoom-in effect on hover */
+}
+
+/* Active state (if needed) */
+#menu-hot_links li a:active {
+    background-color: #0056b3;
+    color: #fff;
+}
+
+/* Responsive for small screens */
+@media (max-width: 768px) {
+    #menu-hot_links {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #menu-hot_links li {
+        margin: 10px 0;
+    }
+}
+
+/* Info page*/
+/* Light/Dark Mode Detection */
+
+/* Dark Mode (default) */
+@media (prefers-color-scheme: dark) {
+    footer{
+        background-color: #202020; /* Dark background */
+        color: #ece8c3; /* Light text */
+    }
+
+    .footer-section h2 {
+        color: #fff;
+    }
+
+    .footer-section a {
+        color: #ece8c3;
+    }
+
+    .footer-section a:hover {
+        color: #fff;
+    }
+
+    .footer-bottom {
+        border-top: 1px solid #ece8c3;
+    }
+}
+
+/* Syllabus */
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+  }
+  
+  body {
+    background-color: white;
+    color: #333;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+  
+  .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+  }
+  
+  .title {
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+  }
+  
+  .card-container {
+    display: flex;
+    gap: 2rem;
+  }
+  
+  .card {
+    background-color: #ece8c3;
+    padding: 20px;
+    border-radius: 10px;
+    width: 300px;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+  }
+  
+  .card:hover {
+    transform: translateY(-10px);
+  }
+  
+  .card h2 {
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+  }
+  
+  .card p {
+    font-size: 1rem;
+    margin-bottom: 1.5rem;
+  }
+  
+  .btn {
+    text-decoration: none;
+    color: white;
+    background-color: #333;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .btn:hover {
+    background-color: #555;
+  }
+  
+  .toggle-mode {
+    margin-top: 2rem;
+    padding: 10px 20px;
+    background-color: #333;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .toggle-mode:hover {
+    background-color: #555;
+  }
+  
+  /* Dark Mode */
+  body.dark-mode {
+    background-color: #333;
+    color: #ece8c3;
+  }
+  
+  body.dark-mode .card {
+    background-color: #444;
+  }
+  
+  body.dark-mode .btn {
+    background-color: #ece8c3;
+    color: #333;
+  }
+  
+  body.dark-mode .btn:hover {
+    background-color: #d6d1a8;
+  }
+  
+  body.dark-mode .toggle-mode {
+    background-color: #ece8c3;
+    color: #333;
+  }
+  
+  body.dark-mode .toggle-mode:hover {
+    background-color: #d6d1a8;
+  }
+  
+
+
+/* Light mode (default) - Make sure your existing styles are here */
+
+body {
+    /* Example: Replace with your current styles */
+    background-color: #f0f0f0; 
+    color: #312d2d;
+}
+
+/* Dark mode overrides */
+body.dark-mode {
+    background-color: #312d2d; /* Dark background */
+    color: #ffffff; /* Light text */
+}
+
+/* Dark mode for specific elements if needed */
+/*.dark-mode .navbar {
+    background-color: #333;
+    color: white;
+}*/
+
+.dark-mode .footer {
+    background-color: #222;
+    color: white;
+}
+
+.dark-mode .course{
+    color: white;
+}
+
+.dark-mode .course-col{
+    background-color: #444;
+}
+.dark-mode .course .news-content a{
+    color: white;
+}
+
+/* Add dark mode overrides for specific components (optional) */
+.dark-mode .card {
+    background-color: #1c1c1c;
+    border-color: #444;
+    color: white;
+}
+
+/* Dark Mode Toggle Switch */
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 40px;
+    height: 20px;
+    margin-left: 5px;
+}
+
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    transition: 0.4s;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 15px;
+    width: 15px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    transition: 0.4s;
+}
+
+input:checked + .slider {
+    background-color: #2196F3;
+}
+
+input:checked + .slider:before {
+    transform: translateX(26px);
+}
+
+.slider {
+    border-radius: 34px;
+}
+
+.slider:before {
+    border-radius: 50%;
+}
+
+
+
+.content{
+    width: 1200px;
+    height: auto;
+    margin: auto;
+    color: #fff;
+    position: relative;
+}
+
+.content .par{
+    padding-left: 20px;
+    padding-bottom: 25px;
+    font-family: Arial;
+    letter-spacing: 1.2px;
+    line-height: 30px;
+}
+
+.content h1{
+    font-family: 'Times New Roman';
+    font-size: 50px;
+    padding-left: 20px;
+    margin-top: 9%;
+    letter-spacing: 2px;
+}
+
+.content .cn{
+    width: 160px;
+    height: 40px;
+    background: #ff7200;
+    border: none;
+    margin-bottom: 10px;
+    margin-left: 20px;
+    font-size: 18px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: .4s ease;
+    
+}
+
+.content .cn a{
+    text-decoration: none;
+    color: #000;
+    transition: .3s ease;
+}
+
+.cn:hover{
+    background-color: #fff;
+}
+
+.content span{
+    color: #ff7200;
+    font-size: 65px
+}
+
+.form{
+    width: 250px;
+    height: 380px;
+    background: linear-gradient(to top, rgba(0,0,0,0.8)50%,rgba(0,0,0,0.8)50%);
+    position: absolute;
+    top: -20px;
+    left: 870px;
+    transform: translate(0%,-5%);
+    border-radius: 10px;
+    padding: 25px;
+}
+
+.form h2{
+    width: 220px;
+    font-family: sans-serif;
+    text-align: center;
+    color: #ff7200;
+    font-size: 22px;
+    background-color: #fff;
+    border-radius: 10px;
+    margin: 2px;
+    padding: 8px;
+}
+
+.form input{
+    width: 240px;
+    height: 35px;
+    background: transparent;
+    border-bottom: 1px solid #ff7200;
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    color: #fff;
+    font-size: 15px;
+    letter-spacing: 1px;
+    margin-top: 30px;
+    font-family: sans-serif;
+}
+
+.form input:focus{
+    outline: none;
+}
+
+::placeholder{
+    color: #fff;
+    font-family: Arial;
+}
+
+.btnn{
+    width: 240px;
+    height: 40px;
+    background: #ff7200;
+    border: none;
+    margin-top: 30px;
+    font-size: 18px;
+    border-radius: 10px;
+    cursor: pointer;
+    color: #fff;
+    transition: 0.4s ease;
+}
+.btnn:hover{
+    background: #fff;
+    color: #ff7200;
+}
+.btnn a{
+    text-decoration: none;
+    color: #000;
+    font-weight: bold;
+}
+.form .link{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 17px;
+    padding-top: 20px;
+    text-align: center;
+}
+.form .link a{
+    text-decoration: none;
+    color: #ff7200;
+}
+.liw{
+    padding-top: 15px;
+    padding-bottom: 10px;
+    text-align: center;
+}
+.icons a{
+    text-decoration: none;
+    color: #fff;
+}
+.icons ion-icon{
+    color: #fff;
+    font-size: 30px;
+    padding-left: 14px;
+    padding-top: 5px;
+    transition: 0.3s ease;
+}
+.icons ion-icon:hover{
+    color: #ff7200;
+}
+/* Base Styles */
+footer {
+    background-color: #202020;
+    color: #ece8c3;
+    padding: 40px 0;
+    font-family: 'Arial', sans-serif;
+}
+
+.footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.footer-section {
+    flex: 1;
+    min-width: 250px;
+    margin-bottom: 20px;
+}
+
+.footer-section h2 {
+    color: #fff;
+    margin-bottom: 10px;
+    font-size: 1.5em;
+}
+
+.footer-section p, 
+.footer-section ul, 
+.footer-section li {
+    margin: 8px 0;
+    font-size: 0.9em;
+}
+
+.footer-section a {
+    color: #ece8c3;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer-section a:hover {
+    color: #fff;
+}
+
+.footer-bottom {
+    text-align: center;
+    margin-top: 20px;
+    border-top: 1px solid #ece8c3;
+    padding-top: 10px;
+}
+
+.footer-bottom p {
+    font-size: 0.8em;
+    color: #ece8c3;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .footer-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-section {
+        text-align: center;
+    }
+}
+
+/* Light/Dark Mode Detection */
+
+/* Dark Mode (default) */
+@media (prefers-color-scheme: dark) {
+    footer {
+        background-color: #202020; /* Dark background */
+        color: #ece8c3; /* Light text */
+    }
+
+    .footer-section h2 {
+        color: #fff;
+    }
+
+    .footer-section a {
+        color: #ece8c3;
+    }
+
+    .footer-section a:hover {
+        color: #fff;
+    }
+
+    .footer-bottom {
+        border-top: 1px solid #ece8c3;
+    }
+}
+
+/* Light Mode */
+@media (prefers-color-scheme: light) {
+    footer {
+        background-color: #ece8c3; /* Light background */
+        color: #202020; /* Dark text */
+    }
+
+    .footer-section h2 {
+        color: #202020;
+    }
+
+    .footer-section a {
+        color: #202020;
+    }
+
+    .footer-section a:hover {
+        color: #555; /* Slightly darker on hover */
+    }
+
+    .footer-bottom {
+        border-top: 1px solid #202020;
+    }
+}
+/* Dropdown */
+/* Dropdown Container */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+/* Dropdown Button */
+.dropbtn {
+    list-style: none;
+    font-family: 'Poppins', sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+    background:none; /* Button color */
+    color: white; /* Button text color */
+    padding: 10px 20px; /* Button padding */
+    font-size: 16px; /* Button font size */
+    border: none; /* Remove border */
+    cursor: pointer; /* Pointer on hover */
+    text-decoration: none; /* Remove underline */
+}
+
+/* Dropdown Content (hidden by default) */
+.dropdown-content {
+    align-items: center;
+    display: none; /* Hide by default */
+    position: absolute; /* Position relative to the dropdown */
+    background:none; /* Semi-transparent white background */
+    border-radius: 5px; /* Rounded corners */
+    min-width: 160px; /* Minimum width of dropdown */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Shadow for depth */
+    z-index: 1; /* Ensure dropdown is above other elements */
+    padding: 10px; /* Padding inside the dropdown */
+}
+
+/* Dropdown Header */
+.dropdown-header {
+    font-size: 16px; /* Header font size */
+    color: #333; /* Header text color */
+    margin: 0; /* Remove margin */
+    padding-bottom: 5px; /* Space below header */
+}
+
+/* Dropdown Links */
+.dropdown-content a {
+    color: white; /* Link text color */
+    padding: 8px 12px; /* Padding for links */
+    text-decoration: none; /* Remove underline */
+    display: block; /* Block display for full-width */
+    font-size: 14px; /* Link font size */
+}
+
+/* Show the dropdown content when hovering over the dropdown button */
+.dropdown:hover .dropdown-content {
+    display: block; /* Show dropdown on hover */
+}
+
+/* Change color on link hover */
+.dropdown-content a:hover {
+    background:none; /* Light blue background on hover */
+}
+
+/* Button hover effect */
+.dropbtn:hover {
+    background:none; /* Darker blue on hover */
+}

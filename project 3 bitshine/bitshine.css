@@ -1,0 +1,63 @@
+*{
+    margin: 0px ;
+    padding: 0px;
+    color: white;
+    box-sizing: border-box;
+}
+/*-------------MAIN BODY--------------------*/
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+   
+
+}
+body{
+    /* background-image: url(codeshinebg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat; */
+    background-color: #0b1419;
+
+}
+/*-------------TOP SECTION-----------------*/
+
+.logo{
+    background-image: url(newlogobitshine.png);
+    filter: invert(97%);
+    width: 100px;
+    height: 100px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin: 20px;
+}
+#sitename{
+    margin-left: 18px;
+    font-family: "Audiowide", sans-serif;
+    font-size: 30px;
+}
+.cat{
+   /* border: 2px solid yellow;  */
+    display: flex;
+    margin-right: 20px;
+    margin-top: 2px;
+}
+.cat ul{
+    display: flex;
+    text-decoration: none;
+    list-style: none;
+}
+.cat ul a{
+    text-decoration: none;
+    margin: 10px;
+    padding: 20px;
+}
+
+/* -----------------MAIN SECTION------------------ */
+.details{
+    border: 2px solid red;
+}
+.main_part{
+    display: flex;
+    justify-content: space-between;
+
+}

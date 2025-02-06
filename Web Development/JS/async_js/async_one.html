@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Async-1</title>
+    <style>
+        body{
+            background-color:palegoldenrod;
+        }
+    </style>
+</head>
+<body>
+    <h1> Hardik learning java script</h1>
+    <button id="start">Start</button>
+    <button id="stop">Stop</button>
+    <div class="hardik"></div>
+
+    <script>
+        const hard = document.querySelector('.hardik') ; 
+        // setInterval(function(){
+        //     console.log("hello hardik");
+        //     hard.innerHTML = Date.now() ;
+        // },2000)
+
+        const start = document.querySelector('#start') ; 
+        const stop = document.querySelector('#stop') ;
+
+            const strt = setInterval(function(){
+                console.log("u clicked on the start button at :",Date.now());
+                hard.innerHTML = Date.now();
+            },1000)
+
+        stop.addEventListener('click',function(){
+            clearInterval(strt) ;
+        })
+    </script>
+</body>
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spanning grids</title>
+    <style>
+        .container{
+            display:grid;
+           grid-template-columns: repeat(6,auto);
+           grid-row-gap: 0.5rem;
+           grid-column-gap: 2rem;
+        }
+        .grid{
+            background-color: rgb(185, 185, 238);
+            border: 2px solid black;
+            padding: 5px;
+        }
+        .grid:first-child{
+          grid-column-start: 1;
+          grid-column-end: 3;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="grid">This is box1</div>
+        <div class="grid">This is box2</div>
+        <div class="grid">This is box3</div>
+        <div class="grid">This is box4</div>
+        <div class="grid">This is box5</div>
+        <div class="grid">This is box6</div>
+        <div class="grid">This is box7</div>
+        <div class="grid">This is box8</div>
+        <div class="grid">This is box9</div>
+        <div class="grid">This is box10</div>
+        <div class="grid">This is box11</div>
+        <div class="grid">This is box12</div>
+        <div class="grid">This is box13</div>
+        <div class="grid">This is box14</div>
+        <div class="grid">This is box15</div>
+        <div class="grid">This is box16</div>
+        
+    </div>
+</body>
+</html>

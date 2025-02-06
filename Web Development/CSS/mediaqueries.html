@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .dabba{
+            background-color: red;
+            font-size: 45px;
+            text-align: center;
+            display:none;
+        }
+        @media only screen and (max-width:300px) {
+            #box1{
+                background-color: yellowgreen;
+                display: block;
+            }
+        }
+        @media only screen and (max-width:500px) and (min-width:300px){
+            #box2{
+                background-color: blue;
+                display: block;
+            }
+        }
+        @media only screen and (max-width:800px) and (min-width:500px){
+            #box3{
+                background-color: palevioletred;
+                display: block;
+            }
+        }
+        @media only screen and (min-width:800px){
+            #box4{
+                background-color:orange;
+                display: block;
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <div class="dabba" id="box1">this is hardik shandilya</div>
+    <div class="dabba" id="box2">this is ritik shandilya</div>
+    <div class="dabba" id="box3">this is vipin shandilya</div>
+    <div class="dabba" id="box4">this is swarnalata shandilya</div>
+</body>
+</html>

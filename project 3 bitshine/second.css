@@ -1,0 +1,122 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Audiowide", sans-serif;
+    background-color: #0b1419;
+    color: white;
+    line-height: 1.6;
+}
+
+header {
+    background-color: #1f2d38;
+    padding: 10px 20px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#sitename {
+    font-size: 24px;
+    color: #fca311;
+    font-family: "Pacifico", cursive;
+}
+
+.cat ul {
+    display: flex;
+    list-style: none;
+}
+
+.cat ul li {
+    margin: 0 10px;
+}
+
+.cat ul a {
+    text-decoration: none;
+    color: white;
+    padding: 10px 20px;
+    background-color: #fca311;
+    border-radius: 5px;
+    transition: background 0.3s ease;
+}
+
+.cat ul a:hover {
+    background-color: #f77f00;
+}
+
+.topics-section {
+    padding: 20px;
+    max-width: 900px;
+    margin: auto;
+}
+
+.topic-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #1f2d38;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+
+.topic-row h2 {
+    margin: 0;
+    font-size: 20px;
+    color: #fca311;
+}
+
+.dropdown-icon {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.dropdown-icon:hover {
+    color: #fca311;
+}
+
+.dropdown-content {
+    display: none;
+    background-color: #1f2d38;
+    border-radius: 5px;
+    margin-top: 5px;
+    padding: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.dropdown-content .question {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.dropdown-content .question p {
+    margin: 0;
+    font-size: 14px;
+}
+
+.link-btn {
+    text-decoration: none;
+    color: white;
+    background-color: #fca311;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 12px;
+    transition: background 0.3s ease;
+}
+
+.link-btn:hover {
+    background-color: #f77f00;
+}

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM -3</title>
+    <style>
+        body{
+            background-color: palevioletred;
+        }
+    </style>
+</head>
+<body>
+</body>
+<script>
+    const js_div = document.createElement('div') ; 
+    js_div.className = "js_ka_div";
+    js_div.id = "1234" ; 
+    const addtext = document.createTextNode("welcome to the world of js") ; 
+    js_div.append(addtext);
+    document.body.append(js_div)
+    js_div.style.backgroundColor = "white";
+    
+     
+
+
+</script>
+</html>

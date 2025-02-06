@@ -1,0 +1,30 @@
+h1{
+    text-transform: uppercase;
+    color: rgb(114, 210, 77);
+}
+body{
+    background-color: black;
+    color: white;
+}
+.boxes{
+    display: flex;
+}
+.class{
+    border: 2px solid white;
+    height: 200px;
+    width: 200px;
+    margin: 20px;
+}
+
+#orange{
+    background-color: orange;
+}
+#pink{
+    background-color: pink;
+}
+#red{
+    background-color:red;
+}
+#brown{
+    background-color: rgb(117, 13, 13);
+}

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<head>
+    <title> flexbox</title>
+    <style>
+        .container{
+            border: 2px solid black;
+            width:100%;
+            height: 600px;
+            display: flex;
+            flex-direction:row;
+            flex-wrap: wrap;
+             /* flex-wrap: wrap;
+            justify-content: center;
+            justify-content: space-between;
+            justify-content: space-around;  
+              */
+             align-items:stretch;
+             
+            
+            
+        }
+        .item{
+            border: 4px solid slateblue;
+            background-color: rgb(252, 252, 0);
+            margin: 5px;
+            padding: 10px;
+            width: 150px;
+            height: 150px;
+           
+        }
+        #item1{
+            /* order: 4; */
+        }
+        #item2{
+            /* order:87; */
+            /* flex-grow: 4; */
+            flex-shrink: 6;
+
+        }
+     
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item" id="item1">this is first</div>
+        <div class="item" id="item2">this is second</div>
+        <div class="item" id="item3">this is third</div>
+        <!-- <div class="item" id="item4">this is fourth</div>
+        <div class="item" id="item5">this is fifth</div>
+        <div class="item" id="item6">this is sixth</div> -->
+    </div>
+</body>
+</html>

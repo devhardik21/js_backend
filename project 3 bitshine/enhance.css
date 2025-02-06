@@ -1,0 +1,157 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Orbitron', sans-serif;
+}
+
+body {
+    background: #121212;
+    color: #fff;
+    font-family: 'Audiowide', sans-serif;
+    line-height: 1.5;
+}
+
+header {
+    background-color: #1f2d38;
+    padding: 15px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .logo img {
+    width: 50px;
+    height: auto;
+}
+
+header .sitename h1 {
+    font-size: 30px;
+    font-family: "Pacifico", cursive;
+    color: #fca311;
+}
+
+header .nav-links ul {
+    display: flex;
+    gap : 50px ; 
+    margin: 50px;
+    list-style: none;
+}
+
+header .nav-links a {
+    text-decoration: none;
+    color: white;
+    padding: 10px 20px;
+    background-color: #fca311;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+    list-style: none;
+}
+
+header .nav-links a:hover {
+    background-color: #f77f00;
+}
+
+.topics-section {
+    margin-top: 30px;
+    padding: 20px;
+    background: #2a3a47;
+    border-radius: 10px;
+}
+
+.section-title {
+    text-align: center;
+    font-size: 36px;
+    color: #fca311;
+    margin-bottom: 30px;
+}
+
+.topics-container {
+    display: grid;
+    gap: 20px;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.topic {
+    background: #263544;
+    border-radius: 10px;
+    padding: 15px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    transition: all 0.3s ease;
+}
+
+.topic:hover {
+    transform: scale(1.05);
+    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.5);
+}
+
+.topic-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #fca311;
+    cursor: pointer;
+    font-size: 24px;
+    margin-bottom: 10px;
+    transition: background-color 0.3s ease;
+}
+
+.topic-header:hover {
+    background-color: #1f2d38;
+    border-radius: 5px;
+}
+
+.dropdown-icon {
+    font-size: 20px;
+    color: #fca311;
+    background: none;
+    border: none;
+}
+
+.dropdown-content {
+    display: none;
+    background-color: #2a3a47;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.question {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.question p {
+    font-size: 16px;
+    color: #fff;
+}
+
+.link-btn {
+    background-color: #fca311;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 14px;
+    transition: background-color 0.3s ease;
+}
+
+.link-btn:hover {
+    background-color: #f77f00;
+}
+
+@media (max-width: 768px) {
+    .topics-container {
+        grid-template-columns: 1fr;
+    }
+
+    header {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    header .nav-links ul {
+        flex-direction: column;
+    }
+}

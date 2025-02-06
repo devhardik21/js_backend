@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BackgroundChange</title>
+    <style>
+        body{
+            background-color: rgb(35, 33, 33);
+            color: aliceblue;
+        }
+    </style>
+</head>
+<body>
+    <h1>Click on the start button to change the background-color</h1>
+    <button id="start">Start</button>
+    <button id="stop">End</button>
+    <script>
+        const start = document.querySelector('#start'); 
+        const stop = document.querySelector('#stop'); 
+
+        const gen_random_color = function(){
+            let color = "#";
+            const hex = '0123456789ABCDEF';
+            for(let i = 0 ; i<6 ; i++){
+                color+=hex[Math.floor(((Math.random())*16))] ;
+            }
+            console.log(color);
+            return color ;
+        }
+        const changebgcolor = function(){
+            let col = gen_random_color();
+            document.body.style.backgroundColor = col ; 
+        }
+        let interval_id;
+        const add_time_interval = function(){
+            if(!interval_id){
+           interval_id=setInterval(changebgcolor,750);
+            }
+        }
+         start.addEventListener('click',add_time_interval);
+
+         stop.addEventListener('click',function(){
+            clearInterval(interval_id);
+            interval_id = null;
+         })
+
+
+    </script>
+</body>
+</html>

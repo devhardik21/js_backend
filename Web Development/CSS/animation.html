@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Animations and frameworks</title>
+    <style>
+        body{
+            background-color: rgb(40, 38, 38);
+        }
+        .container{
+            background-color: rgb(172, 108, 231);
+        }
+        .box{
+            height: 150px;
+            width: 150px;
+            background-color: burlywood;
+            /* animation-name: hardik;
+            animation-duration: 2s;
+            animation-iteration-count: infinite; */
+           animation: hardik 2s infinite ease-out ;
+        }
+        @keyframes hardik{
+            from{
+                width: 150px;
+            }
+            to{
+                width: 600px;
+            }
+        }
+        .container2{
+            background-color: rgb(10, 221, 221);
+        }
+        .dabba{
+            height: 150px;
+            width: 150px;
+            background-color: yellow;
+            position: relative;
+            animation: deva 8s infinite;
+        }
+        @keyframes deva{
+            0%{
+                top:0px;
+                left:0px ;
+            }
+            25%{
+                top: 0px;
+                left: 150px;
+            }
+            50%{
+                top: 150px;
+                left: 150px;
+            }
+            75%{
+                left: 0px;
+                top: 150px;
+            }
+            100%{
+                left: 0px;
+                top: 0px;
+            }
+        }
+    </style> 
+</head>
+<body>
+    <div class="container">
+        <div class="box">
+            <!-- this is a box -->
+        </div>
+    </div>
+    <br> <br> <br> <br>
+    <div class="container2">
+        <div class="dabba"></div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,134 @@
+/* General Styles */
+body {
+    background-color: #ece8c3;
+    color: white;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    transition: all 0.3s ease-in-out;
+}
+
+h1, h2, h3 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+.course-col, .facility-col {
+    text-align: center;
+    margin: 20px;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: rgba(0, 0, 0, 0.4);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease-in-out;
+}
+
+.course-col:hover, .facility-col:hover {
+    transform: scale(1.05);
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+.row {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.facility-row {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.course {
+    padding: 50px;
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+.facility {
+    padding: 50px;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+/* Toggle Switch */
+.toggle-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0;
+}
+
+.toggle-text {
+    margin-left: 10px;
+    font-size: 16px;
+}
+
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+}
+
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    transition: 0.4s;
+    border-radius: 34px;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    transition: 0.4s;
+    border-radius: 50%;
+}
+
+input:checked + .slider {
+    background-color: #2196f3;
+}
+
+input:checked + .slider:before {
+    transform: translateX(26px);
+}
+
+/* Dark Mode Styles */
+body.dark-mode {
+    background-color: #333;
+    color: #ece8c3;
+}
+
+.dark-mode .course-col, 
+.dark-mode .facility-col {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.dark-mode .course-col:hover, 
+.dark-mode .facility-col:hover {
+    background-color: rgba(255, 255, 255, 0.3);
+}
+
+.dark-mode .slider {
+    background-color: #2196f3;
+}

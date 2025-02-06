@@ -1,0 +1,241 @@
+/* everything */
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@1,200&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Hubballi&family=Source+Code+Pro:ital,wght@1,200&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Hubballi&family=Poppins:wght@100&family=Source+Code+Pro:ital,wght@1,200&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Hubballi&family=Poppins:wght@100&family=Source+Code+Pro:ital,wght@1,200&family=Whisper&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@1,100&family=Hubballi&family=Poppins:wght@100&family=Source+Code+Pro:ital,wght@1,200&family=Whisper&display=swap');
+*{
+    padding: 0px;
+    margin: 0px;
+}
+/* UTILITY CLASSES */
+.hprimary {
+    font-size: 2.7rem;
+    padding: 12px;
+    text-align: center;
+    font-family: 'Hubballi', 'sans-serif';
+    
+}
+.hsecondary {
+    text-align: center;
+    /* font-family: 'Exo 2','sans-serif'; */
+    font-family: 'Hubballi', 'sans-serif';
+    font-size: 23px;
+    
+}
+
+/* HEADER */
+#navbuttons {
+    margin: 36px 37px;
+}
+
+.navbar {
+    display: flex;
+    background-color: #092635;
+}
+
+.logo img {
+    width: 50px;
+    height: 50px;
+    filter: invert(100%);
+}
+
+.navbar ul {
+    display: flex;
+    list-style: none;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    margin: 10px 59px;
+    padding: 34px;
+    font-size: 25px;
+    color: white;
+    font-family: 'Hubballi', 'sans-serif';
+}
+
+/* section home */
+
+#home {
+    display: flex;
+    flex-direction: column;
+    height: 400px;
+    align-items: center;
+    justify-content: center;
+    background-color: #1B4242;
+    color: white;
+}
+
+#home p {
+    font-size: 20px;
+    width: 600px;
+}
+
+.btn {
+    margin: 4px 5px;
+    padding: 12px;
+    border: 2px solid black;
+    border-radius: 7px;
+    background-color: aquamarine;
+    font-size: 17px;
+    transition-property: all;
+    transition-duration: 3s;
+}
+
+.btn:hover {
+    background-color: white;
+    cursor: pointer;
+    box-shadow: 1px 1px 5px white;
+}
+
+/* SECTION BUY ME */
+.box img {
+    height: 200px;
+    display: block;
+    margin: auto;
+}
+
+.services {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.box {
+    display: flex;
+    flex-direction: column;
+    border: 2px solid black;
+    height: 400px;
+    margin: 34px;
+    padding: 20px;
+    border-radius: 45px;
+    background-color: #e2e2e2;
+}
+
+.pservices {
+    font-size: 20px;
+}
+
+.btnserv {
+    margin: 1px 85px;
+    padding: 12px;
+    border: 2px solid black;
+    border-radius: 7px;
+    background-color: rgb(135, 138, 204, 1);
+    font-size: 15px;
+    transition-property: all;
+    transition-duration: 3s;
+}
+
+.btnserv:hover {
+    background-color: rgb(47, 47, 47);
+    color: white;
+    box-shadow: 2px 2px 5px black;
+}
+
+/* ABOUT US section */
+.buyh {
+    display: flex;
+    justify-content: center;
+}
+
+.pabout {
+    font-size: 21px;
+    width: 1000px;
+}
+
+.divabout {
+    display: flex;
+    justify-content: center;
+}
+
+#aboutus {
+    border: 2px solid black;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #1B4242;
+    height: 400px;
+    color: white;
+}
+
+.meimg img {
+    height: 200px;
+    width: 200px;
+}
+
+/* other links */
+ul {
+    list-style-type: none;
+}
+
+#otherlinks {
+    background-color: black;
+    color: aliceblue;
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.otherproduct {
+    margin: 0px 55px;
+    padding: 15px;
+}
+
+.personal {
+    margin: 0px 55px;
+    padding: 15px;
+}
+
+.personal p {
+    margin: 5px;
+}
+
+.countries {
+    margin: 0px 55px;
+    padding: 15px
+}
+
+.personal a {
+    text-decoration: none;
+    color: burlywood;
+}
+
+.personal img {
+    height: 25px;
+    width: 25px;
+}
+
+#otherlinks li a {
+    color: white;
+    text-decoration: none;
+    list-style-type: none;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    background-color: black;
+    color: white;
+    padding: 25px;
+    font-size: 25px;
+}
+
+h3 {
+    font-size: 27px;
+    font-family: 'Source Code Pro', monospace;
+}
+
+.countries li a {
+    font-size: 21px;
+    padding: 29px;
+}
+.otheritem li a {
+    font-size: 21px;
+    padding: 29px;
+}

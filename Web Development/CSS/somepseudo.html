@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>more on pseudo selectors</title>
+    <style>
+        .container{
+            display: block;
+            width: 200px;
+            margin: auto;
+        }
+        input[type="text"]{
+            margin: 10px;
+            border: 4px solid red;
+        }
+        a[target]{
+            display: block;
+            text-decoration: none;
+            font-size: 20px;
+        }
+        a[target="_self"]{
+            color: brown;
+        }
+        a[target="_blank"]{
+            background-color: aqua;
+        }
+        /* li:nth-child(3){
+            background-color: blueviolet;
+        } */
+        li:nth-child(odd){
+            background-color: palevioletred;
+            margin: 10px;
+        }
+        li:nth-child(even){
+            background-color: yellow;
+            padding:10px;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+    <form action="" class="class">
+        <input type="text" placeholder="enter your name"> 
+        <input type="email" placeholder="enter your email"> 
+        <input type="password" placeholder="enter your password"> 
+    </form>
+    <ol>
+        <li class="list" id="list1">hola amigo..kaise ho theek ho?? </li>
+        <li class="list" id="list2">hola amigo..kaise ho theek ho??</li>
+        <li class="list" id="list3">hola amigo..kaise ho theek ho??</li>
+        <li class="list" id="list4">hola amigo..kaise ho theek ho??</li>
+    </ol>
+    <a href="https://google.com" target="_blank"> go to google</a>
+    <a href="https://facebook.com" target="_self"> go to facebook</a>
+    </div>
+</body>
+</html>

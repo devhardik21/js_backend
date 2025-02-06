@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM-2</title>
+    <style>
+        body{
+            background-color: black;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <div class="parent">
+        <div class="child">Monday
+        <div class="test">
+            "this is to test innertext , innerhtml , textcontent"
+        </div>
+        </div>
+        <div class="child">Tuesday</div>
+        <div class="child">Wednesday</div>
+        <div class="child">Thursday</div>
+    </div>
+</body>
+<script>
+    const p = document.querySelector('.parent')
+    //console.log(p);
+   // console.log(p.children);
+    //the above(p.above) is of the form Html collection 
+
+    for(let i = 0 ; i<p.children.length ; i++){
+    //        console.log(p.children[i]);
+    }
+    const ab = p.children[0] ;
+    ab.style.backgroundColor = "yellow";
+    ab.style.color = "red" ;
+   const gb_cls_name =  document.getElementsByClassName('parent') ;
+  //console.log(gb_cls_name);
+  const qu_name = document.querySelectorAll('.child') ; 
+  //console.log(qu_name);
+  // accesing parent using child nodee
+  const chi = document.querySelector('.child');
+  //query selector gives the first element of the child class so the child got selected
+  // now the parentelement would give the parent  
+  console.log(chi.parentElement);
+  const par  = chi.parentElement ;
+  console.log(par.firstElementChild);
+  console.log(par.lastElementChild);
+  console.log(chi.nextElementSibling);
+
+  // lets see the difference between innertext,innerhtml ,text content 
+  console.log(chi.innerHTML);
+  console.log(chi.textContent);
+  console.log(chi.innerText);
+
+
+  
+    
+
+
+
+
+
+
+</script>
+</html>

@@ -1,0 +1,45 @@
+body{
+    background-color: black;
+    color: white;
+}
+.center{
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    align-items: center;
+}
+.india{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 300px;
+    width: 300px;
+    border: 2px solid rgb(37, 112, 252);
+    border-radius: 12px;
+    padding: 20px;
+    margin: 45px;
+}
+.usa{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 300px;
+    width: 300px;
+    border: 2px solid rgb(37, 112, 252);
+    border-radius: 12px;
+    padding: 20px;
+    margin: 45px;
+}
+
+.clock{
+    background-color: rgb(156, 182, 230);
+    height: 100px;
+    width: 200px;
+    border-radius: 10px;
+    color: black;
+    display: flex;
+    text-align: center;
+    font-size: 35px;  
+}

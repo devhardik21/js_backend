@@ -1,0 +1,44 @@
+<html>
+    <head>
+        <title> positions
+        </title>
+        <style>
+            .box{
+                margin: 10px 4px;
+                border: 2px solid black;
+                display: inline-block;
+                width: 100px;
+                height: 50px;
+            }
+            .container{
+                position:relative;
+                border: 2px red solid;
+                height: 1000px;
+                background-color: rgb(237, 189, 131);
+            }
+            #box4{
+                position: absolute;
+                top: 50px;
+                right:150px;
+            }
+            #box3{
+                position: fixed;
+                right: 10px;
+                top:100px;
+            }
+            #box2{
+                position: sticky;
+                right: 10px;
+                top:100px;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <div class="box" id="box1">1</div>
+            <div class="box" id="box2">2.this is sticky</div>
+            <div class="box" id="box3">3.this is fixed</div>
+            <div class="box" id="box4">4</div>
+        </div>
+    </body>
+</html>

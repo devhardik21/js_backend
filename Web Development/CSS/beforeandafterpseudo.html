@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>before and after pseudo</title>
+    <style>
+        body{
+            background-color: black;
+            color: white;
+        }
+
+        li{
+            list-style: none;
+            margin: 35px;
+        }
+
+       ul{
+        display: flex;
+        font-size: 15px;
+       }
+       section{
+        text-align: center;
+        border: 2px solid red;
+        margin: 25px;
+        padding: 100px;
+       }
+       section::after{
+        content:"this will be added";
+       }
+       header::after{
+        content: "this will be added after our header";
+       }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <UL>
+                <li class="items">HOME</li>
+                <li class="items">ABOUT US</li>
+                <li class="items">MENU</li>
+                <li class="items">CONTACT US</li>
+            </UL>
+        </nav>
+    </header>
+    <section>
+        <h1> WELCOME TO HARDIK'S KITCHEN</h1>
+        <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti qui, labore illo optio soluta sapiente
+            laudantium? Voluptate earum debitis eius, necessitatibus minima at voluptatibus reiciendis possimus?
+            Veritatis repudiandae magni iste?</p>
+        <hr>
+</body>
+</html>

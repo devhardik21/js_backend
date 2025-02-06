@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Problem Solving - CodeShine</title>
+    <link href="https://fonts.googleapis.com/css2?family=Audiowide&family=Orbitron:wght@400..900&family=Pacifico&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="enhance.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <img src="newlogobitshine.png" alt="CodeShine Logo" >
+            </div>
+            <div class="sitename">
+                <h1>CodeShine</h1>
+            </div>
+            <div class="askgpt"></div>
+            <div class="nav-links">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="#">Practice</a></li>
+                    <li><a href="#">Contests</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <section class="topics-section">
+        <h2 class="section-title">Problem Solving Topics</h2>
+        <div class="topics-container">
+            <!-- Topic Cards -->
+            <div class="topic">
+                <div class="topic-header" data-topic="arrays">
+                    <h3>Arrays</h3>
+                    <button class="dropdown-icon">&#x25BC;</button>
+                </div>
+                <div class="dropdown-content" id="arrays">
+                    <div class="question">
+                        <p>Two Sum</p>
+                        <a href="https://leetcode.com/problems/two-sum/" target="_blank" class="link-btn">Link</a>
+                    </div>
+                    <div class="question">
+                        <p>Maximum Subarray</p>
+                        <a href="https://leetcode.com/problems/maximum-subarray/" target="_blank" class="link-btn">Link</a>
+                    </div>
+                    <div class="question">
+                        <p>Rotate Array</p>
+                        <a href="https://leetcode.com/problems/rotate-array/" target="_blank" class="link-btn">Link</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Additional Topics -->
+            <div class="topic">
+                <div class="topic-header" data-topic="sorting">
+                    <h3>Sorting</h3>
+                    <button class="dropdown-icon">&#x25BC;</button>
+                </div>
+                <div class="dropdown-content" id="sorting">
+                    <div class="question">
+                        <p>Merge Sort</p>
+                        <a href="https://leetcode.com/problems/sort-an-array/" target="_blank" class="link-btn">Link</a>
+                    </div>
+                    <div class="question">
+                        <p>Quick Sort</p>
+                        <a href="https://leetcode.com/problems/sort-an-array/" target="_blank" class="link-btn">Link</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="topic">
+                <div class="topic-header" data-topic="binary-search">
+                    <h3>Binary Search</h3>
+                    <button class="dropdown-icon">&#x25BC;</button>
+                </div>
+                <div class="dropdown-content" id="binary-search">
+                    <div class="question">
+                        <p>Search in Rotated Sorted Array</p>
+                        <a href="https://leetcode.com/problems/search-in-rotated-sorted-array/" target="_blank" class="link-btn">Link</a>
+                    </div>
+                    <div class="question">
+                        <p>Find Minimum in Rotated Sorted Array</p>
+                        <a href="https://leetcode.com/problems/find-minimum-in-rotated-sorted-array/" target="_blank" class="link-btn">Link</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="topic">
+                <div class="topic-header" data-topic="recursion">
+                    <h3>Recursion</h3>
+                    <button class="dropdown-icon">&#x25BC;</button>
+                </div>
+                <div class="dropdown-content" id="recursion">
+                    <div class="question">
+                        <p>Fibonacci Sequence</p>
+                        <a href="https://leetcode.com/problems/fibonacci-number/" target="_blank" class="link-btn">Link</a>
+                    </div>
+                    <div class="question">
+                        <p>Permutations</p>
+                        <a href="https://leetcode.com/problems/permutations/" target="_blank" class="link-btn">Link</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- More Topics -->
+            <div class="topic">
+                <div class="topic-header" data-topic="linked-lists">
+                    <h3>Linked Lists</h3>
+                    <button class="dropdown-icon">&#x25BC;</button>
+                </div>
+                <div class="dropdown-content" id="linked-lists">
+                    <div class="question">
+                        <p>Reverse Linked List</p>
+                        <a href="https://leetcode.com/problems/reverse-linked-list/" target="_blank" class="link-btn">Link</a>
+                    </div>
+                    <div class="question">
+                        <p>Cycle Detection</p>
+                        <a href="https://leetcode.com/problems/linked-list-cycle/" target="_blank" class="link-btn">Link</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        document.querySelectorAll(".topic-header").forEach(header => {
+            header.addEventListener("click", () => {
+                const topic = document.getElementById(header.dataset.topic);
+                topic.style.display = topic.style.display === "block" ? "none" : "block";
+            });
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content ="with=device-width, initial-scale">
+    <title>BIT DURG | B.Tech, MCA, MBA, M.Tech, Autonomous College</title>
+    <script>
+                document.addEventListener('DOMContentLoaded', function () {
+            const darkModeToggle = document.getElementById('darkModeToggle');
+
+            // Check if dark mode is enabled from localStorage
+            if (localStorage.getItem('dark-mode') === 'enabled') {
+                document.body.classList.add('dark-mode');
+                darkModeToggle.checked = true; // Keep the toggle checked
+            }
+
+            // Listen for toggle switch changes
+            darkModeToggle.addEventListener('change', function () {
+                if (this.checked) {
+                    document.body.classList.add('dark-mode');
+                    localStorage.setItem('dark-mode', 'enabled'); // Save preference
+               } else {
+                    document.body.classList.remove('dark-mode');
+                    localStorage.setItem('dark-mode', 'disabled'); // Save preference
+                }
+            });
+        });
+                document.querySelectorAll('.accordion-item').forEach(item => {
+            item.addEventListener('click', function () {
+                // Close all other accordion items
+                document.querySelectorAll('.accordion-item').forEach(el => {
+                    if (el !== this) {
+                        el.classList.remove('active');
+                    }
+                });
+
+                // Toggle the clicked accordion item
+                this.classList.toggle('active');
+            });
+        });
+
+        // Function to toggle dark mode
+                function toggleDarkMode() {
+                  document.body.classList.toggle('dark-mode');
+                }
+
+                const toggleButton = document.getElementById("dark-mode-toggle");
+                 toggleButton.addEventListener("click", () => {
+                     document.body.classList.toggle("dark-mode");
+                 });
+
+
+
+    </script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Josefin+Slab:ital,wght@1,600&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Slab:ital,wght@1,600&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,600;0,700;1,100&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.6.0/css/fontawesome.min.css">
+</head>
+    <link rel="stylesheet" href="style2.css">
+</head>
+<body>
+
+    <div class="main">
+        <div class="navbar">
+            <div class="icon">
+                <a href="front.html"><img src="logo.jpeg"></a>
+            </div>
+
+            <div class="menu">
+                <ul>
+                    <li><a href="https://bitdurg.ac.in/about">ABOUT</a></li>
+                    <li><a href="https://bitdurg.ac.in/admission">ADMISSION</a></li>
+                    <li><a href="#">DEPARTMENT</a></li>
+                    <li><a href="https://bitdurg.ac.in/central-library">RESOURCES</a></li>
+                    <li class="dropdown">
+                        <a href="#Login" class="dropbtn">LOGIN</a>
+                        <div class="dropdown-content">
+                            <a href="https://erp.bitdurg.ac.in/Login.jsp">Student</a>
+                            <a href="http://erp.bitdurg.ac.in/parents/Login.jsp">Parent</a>
+                            <a href="https://erp.bitdurg.ac.in/employee/Login.jsp">Employee</a>
+                            <a href="https://erp.bitdurg.ac.in/admin/login2.jsp">HOD/Incharge</a>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="dark-mode-toggle">
+                            <label class="switch">
+                                <input type="checkbox" id="darkModeToggle">
+                                <span class="slider"></span>
+                            </label>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div> 
+        <div class="text-box">
+            <h1>WELCOME TO BIT DURG</h1>
+            <p>NAAC, NIRF, NBA Affiliated</p>
+            <a href="https://bitdurg.ac.in/amenities" class="hero-btn">Visit Us To Know More</a>
+        </div>   
+    </div>
+
+    <!----------Course---------->
+
+    <section class="course">
+        <h1>About Us</h1>
+        <div class="row">
+            <div class="course-col">
+                <h3>Bachelors</h3>
+                <ul>
+                    <li>B.Tech - Civil Engineering</li>
+                    <li>B.Tech - Mechanical Engineering</li>
+                    <li>B.Tech - Electrical Engineering</li>
+                    <li>B.Tech - Electronics & Telecomm. Engineering</li>
+                    <li>B.Tech - Computer Science & Engineering</li>
+                    <li>B.Tech - Computer Science & Enggg. (Data Science)</li>
+                    <li>B.Tech - Information Technology</li>
+                    <li>B.Tech - Electrical & Electronics Engineering</li>
+                    <li>B.Tech - Electronics and Computer Science</li>
+                    <li>B.Tech - Computer Science & Technology</li>
+                </ul>
+            </div>
+            <div class="course-col">
+                <h3>Post Graduate</h3>
+                <ul>
+                    <li>M.Tech(Structural Engineering) Civil</li>
+                    <li>M.Tech(Electrical Power & Energy System) EEE</li>
+                    <li>M.Tech(Data Science) CSE</li>
+                    <li>M.Tech(Electric Vehicle) Mechanical</li>
+                    <li>M.Tech(Environmental Sc. & Engg.) Civil</li>
+                    <li>Master of Business Administration</li>
+                    <li>Master of Computer Applications</li>
+                    <li>Doctor of Philosophy(PHD)</li>
+                </ul>
+            </div>
+            <div class="course-col">
+                <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12" id="notices">
+                    <h3 class="text-uppercase">
+                        <i class="fa fa-newspaper-o mr-10"></i>Notices &amp; Examination
+                    </h3>
+                    <br>
+                    <div class="information-zone">
+                        <div class="information-tab-menu">
+                            <main>
+                                <input id="tab1" type="radio" name="tabs" checked="">
+                                <label for="tab1">Notices</label>
+                                <input id="tab2" type="radio" name="tabs">
+                                <label for="tab2">Examination</label>
+                                <section id="content1">
+                                    <div class="acsce-text-slider">
+                                        <div class="freshdesignweb">
+                                            <article class="grid_3 carousel-article">
+                                                <div id="home-news-News-carousel2" class="carousel slide">
+                                                    <ul class="carousel-li caroufredsel_wrapper carousel-inner">
+                                                        <div class="item active">
+                                                            <li>
+                                                                <div class="news-content">
+                                                                    <p><a class="title1" href="http://bitdurg.ac.in/admin/uploads/Syllabus_MBA_1st_Sem_2020.pdf"  target="_blank">
+                                                                    Syllabus of Autonomous MBA 1st Semester 2020
+                                            
+                                                                </div>
+                                                            </li>
+                                                        </div>
+                                                        <div class="item">
+                                                            <li>
+                                                                <div class="news-content">
+                                                                    <p><a class="title1" href="//bitdurg.ac.in/admin/uploads/NOTIFICATION_SCHOLARSHIP2024.pdf" target="_blank">SC/ST/OBC Category Scholarship 2024</a></p>
+                                                                    <p><a class="readm"href="//bitdurg.ac.in/admin/uploads/NOTIFICATION_SCHOLARSHIP2024.pdf" target="_blank">Read more...</a></p>
+                                                                </div>
+                                                            </li>
+                                                        </div>
+                                                    </ul>
+                                                </div>
+                                            </article>
+                                        </div>
+                                    </div>
+                                </section>
+                            </main>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+
+    <!------------facility---------->
+
+    <section class="row1">
+        <div class="facility">
+            <div class="facility-col">
+                <div class="facilities">
+                    <div class="facilities-band">Distinct Features</div>
+                    <ul id="menu-hot_links" class="nav navbar-nav">
+                        <li id="menu-item-1783"
+                            class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1783"><a
+                                title="Parent Zone " href="#">Parent Zone</a></li>
+
+                        <li id="menu-item-3264"
+                            class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3264"><a
+                            title="Students Corner" href="#" target="_blank">Students Corner</a></li>
+
+                        <li id="menu-item-3323"
+                            class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3323"><a
+                                title="Faculty Corner" href="#" target="_blank">Faculty Corner</a></li>
+
+                        <li id="menu-item-2649"
+                            class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2649"><a
+                                title="1st Year Students Information"
+                                href="//bitdurg.ac.in/downloads/prospectus2021.pdf"
+                                target="_blank">1st Year Students Information</a></li>
+
+
+                    <li id="menu-item-4526"
+                        class="menu-item menu-item-type-post_type menu-item-object-page menu-item-4526"><a
+                            title="Anti Ragging Cell" href="//bitdurg.ac.in/anti-ragging">Anti
+                            Ragging Cell</a></li>
+
+                    <li id="menu-item-4526"
+                        class="menu-item menu-item-type-post_type menu-item-object-page menu-item-4526"><a
+                            title="Women Security Cell"
+                            href="//bitdurg.ac.in/women-security-cell">Women Security Cell</a></li>
+
+                        <li id="menu-item-4486"
+                            class="menu-item menu-item-type-custom menu-item-object-custom menu-item-4486"><a
+                                title="Admission Enquiry" target="_blank"
+                                href="http://bitdurg.ac.in/bit_durg/grievance/Login/index/Student"
+                                target="_blank">Grievance Redressal</a></li>
+                    </ul>
+                    </div>
+                </div>
+            <div class="facility-col">
+                <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+                    <div class="facilities">
+                        <div class="facilities-band">Facilities</div>
+                        <div class="accordion">
+                            <div class="accordion-item">
+                                <a href="//bitdurg.ac.in/hostels"><label>Hostels</label></a>
+                                <div class="accordion-content">
+                                    <h2>Hostels</h2>
+                                </div>
+                            </div>
+                
+                            <div class="accordion-item">
+                                <a href="//bitdurg.ac.in/central-library"><label>Library</label></a>
+                                <div class="accordion-content">
+                                    <h2>Library</h2>
+                                </div>
+                            </div>
+                
+                            <div class="accordion-item">
+                                <a href="//bitdurg.ac.in/dispensary"><label>Medical Facility</label></a>
+                                <div class="accordion-content">
+                                    <h2>Medical Facility</h2>
+                                </div>
+                            </div>
+                
+                            <div class="accordion-item">
+                                <a href="//bitdurg.ac.in/gym"><label>Gymnasium</label></a>
+                                <div class="accordion-content">
+                                    <h2>Gymnasium</h2>
+                                </div>
+                            </div>
+                
+                            <div class="accordion-item">
+                                <a href="//bitdurg.ac.in/sports"><label>Sports</label></a>
+                                <div class="accordion-content">
+                                    <h2>Sports</h2>
+                                </div>
+                            </div>
+                
+                            <div class="accordion-item">
+                                <a href="//bitdurg.ac.in/student-store"><label>Shopping Complex</label></a>
+                                <div class="accordion-content">
+                                    <h2>Shopping Complex</h2>
+                                </div>
+                            </div>
+                
+                            <div class="accordion-item">
+                                <a href="//bitdurg.ac.in/bank"><label>Bank</label></a>
+                                <div class="accordion-content">
+                                    <h2>Bank</h2>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+
+    </section>
+
+    <!-----------Syllabus--------->
+
+    <section>
+        <div class="container">
+            <h1 class="title">Syllabus</h1>
+        
+            <div class="card-container">
+              <!-- Card for BIT Durg Autonomous -->
+              <div class="card" id="bit-durg-card">
+                <h2>Autonomous Batch (BIT Durg)</h2>
+                <p>Click here to view the syllabus for the autonomous batch of BIT Durg.</p>
+                <a href="https://bitdurg.ac.in/syllabus" class="btn">Go to Syllabus</a>
+              </div>
+        
+              <!-- Card for CSVTU Affiliated Batch -->
+              <div class="card" id="csvtu-card">
+                <h2>CSVTU Affiliated Batch</h2>
+                <p>Click here to view the syllabus for the CSVTU affiliated batch.</p>
+                <a href="https://csvtu.ac.in/ew/programs-and-schemes/" class="btn">Go to Syllabus</a>
+              </div>
+            </div>
+          </div>
+    </section>
+
+    <!---------Footer------->
+
+    <section>
+    <footer>
+        <div class="footer-container">
+            <div class="footer-section">
+                <h2>Contact Us</h2>
+                <p>Institute Code: 01</p>
+                <p>Established in 1986</p>
+                <p>Bhilai House, Durg, Chhattisgarh-491001</p>
+                <p>Email: <a href="mailto:bit@bitdurg.ac.in">bit@bitdurg.ac.in</a></p>
+                <p>Phone: <a href="tel:+917882359297">0788-2359297</a>, <a href="tel:+917882359263">0788-2359263</a></p>
+            </div>
+
+            <div class="footer-section">
+                <h2>Quick Links</h2>
+                <ul>
+                    <li><a href="#">Sports</a></li>
+                    <li><a href="#">BITCON</a></li>
+                    <li><a href="#">OJAS</a></li>
+                    <li><a href="#">NCC</a></li>
+                    <li><a href="#">NSS</a></li>
+                    <li><a href="#">Hostel Facilities</a></li>
+                    <li><a href="#">Moodle</a></li>
+                    <li><a href="#">Clubs</a></li>
+                    <li><a href="#">e-Books</a></li>
+                    <li><a href="#">Online Fee Payment</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-section">
+                <h2>Downloads</h2>
+                <ul>
+                    <li><a href="#">Backlog Exam Form</a></li>
+                    <li><a href="#">Revaluation Form</a></li>
+                    <li><a href="#">Transfer & Provisional Certificate Form</a></li>
+                    <li><a href="#">Admission Form</a></li>
+                    <li><a href="#">Calendar</a></li>
+                    <li><a href="#">Prospectus</a></li>
+                    <li><a href="#">Magazine</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-section">
+                <h2>Important Links</h2>
+                <ul>
+                    <li><a href="http://www.csvtu.ac.in" target="_blank">CSVTU Calendar</a></li>
+                    <li><a href="http://www.alumni.bitdurg.ac.in" target="_blank">Alumni</a></li>
+                    <li><a href="http://www.aicte-india.org" target="_blank">AICTE</a></li>
+                    <li><a href="http://www.ugc.ac.in" target="_blank">UGC</a></li>
+                    <li><a href="http://www.cgdte.in" target="_blank">DTE Raipur</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 BIT Durg. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
+    </section>
+
+    <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
+</body>
+</html>

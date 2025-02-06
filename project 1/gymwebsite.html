@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+
+<head>
+    <title> HARDIK's GYM</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Audiowide">
+    <link href='https://fonts.googleapis.com/css?family=Akaya Telivigala' rel='stylesheet'>
+    <style>
+        body {
+            color: white; 
+            background: url("background.jpg");
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+
+        .left {
+            display: inline-block;
+            /* border: 2px solid red; */
+          position: absolute;
+          top: 10px;
+          left: 20px;
+          padding: auto auto;
+        }
+        .left img{
+            width: 78px;
+            filter: invert(100%);
+        }
+
+        #hardik{
+            text-align: center;
+            font-size: 15px;
+            line-height: 5px;
+        }
+        .mid {
+            display:block;
+            /* border: 2px solid green; */
+            width: 50%;
+            margin: 25px auto;
+
+        }
+
+        .mid li {
+            display: inline-block;
+        }
+
+        .mid li a {
+            color: white;
+            text-decoration: none;
+            margin: 15px;
+            padding: 15px;
+            font-family: "Akaya Telivigala";
+          
+        }
+
+        .mid li a:hover,.mid li a.active{
+            text-decoration: underline;
+            color: grey;
+        }
+
+        .right {
+            display: inline-block;
+            /* border: 2px solid blue; */
+            position: absolute;
+            right: 1px;
+            top: 35px;
+        }
+        .btn{
+            background-color: black;
+            color: white;
+            border: 2px solid grey;
+            margin: 5px;
+            padding: 10px;
+            border-radius: 10px;
+            font-family: "Akaya Telivigala";
+            font-size: 15px;
+        }
+        .btn:hover{
+            color: grey;
+
+        }
+        .container{
+            text-align: center;
+            border: 2px solid white;
+            border-radius: 25px;
+            width: 35%;
+            margin: 75px 15px;
+            padding: 50px;
+        }
+        .element input{
+            background-color: rgb(216, 214, 214);
+            margin: 5px 20px;
+            padding: 5px;
+             display: block;
+            width: 400px;
+            border: 2px solid black;
+            border-radius: 15px;
+            font-family:"audiowide";
+            }
+            h2{
+                font-family:"audiowide";
+          }
+          .submit{
+            border: 2px solid grey;
+            border-radius: 15px;
+            background-color: grey;
+            width:50%;
+            padding: 5px;
+            margin: 25px;
+            font-family: cursive;
+            cursor: pointer;
+          }
+          .submit:hover{
+            background-color: white;
+          }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="left">
+            <img
+                src="https://st.depositphotos.com/1742172/2154/v/950/depositphotos_21546643-stock-illustration-cartoon-gym-weight.jpg">
+           <div id="hardik"> HARDIK FITNESS</div>
+        </div>
+        <div class="mid">
+            <ul>
+                <li><a href="#>" class="active">HOME</a> </li>
+                <li><a href="#>"> FEATURES</a></li>
+                <li><a href="#>">FEES STRUCTURE</a> </li>
+                <li><a href="#>"> FITNESS PLAN</a></li>
+            </ul>
+        </div>
+        <div class="right">
+            <button class="btn">CHAT WITH US</button>
+            <button class="btn"> ABOUT US </button>
+        </div>
+        <div class="container">
+            <form class="form">
+                <h2> Enter to transform your fitness life </h2>
+                <div class="element">
+                <input type="text" placeholder="enter your name">
+                </div>
+                <div class="element">
+                <input type="text" placeholder="enter your locality">
+                </div>
+                <div class="element">
+                <input type="text" placeholder="enter your dob">
+                </div>
+                <div class="element">
+                <input type="text" placeholder="enter your email">
+                </div>
+                <div class="element">
+                <input type="text" placeholder="enter your contact no ">
+                </div>
+                <div>
+                    <button class="submit"> submit now</button>
+                </div>
+            </form>
+        </div>
+    </header>
+</body>

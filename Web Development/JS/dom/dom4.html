@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM-4</title>
+</head>
+<body>
+    <!-- adding and replacing contents in DOM -->
+    <ul class="class-name">
+        <li>Javascript</li>
+    </ul>
+</body>
+<script>
+    //----- method -1  ------
+    const to_be_added  = document.createElement('li');
+    const text = document.createTextNode('python') ; 
+    to_be_added.append(text) ; 
+    document.querySelector('.class-name').append(to_be_added) ;
+
+    //------using function -----
+const addlang = function(langname){
+   const to_be_added = document.createElement('li') ; 
+    to_be_added.innerHTML = `${langname}`;
+    document.querySelector('.class-name').append(to_be_added) ;  
+
+}
+addlang("c++")
+addlang("java"); 
+addlang("ruby") ;
+addlang("R");
+//<--------------------------Editing---------------------------------->
+const to_be_rep = document.querySelector('li:nth-child(2)') ;
+console.log(to_be_rep);
+//method-1 
+//to_be_rep.innerHTML = "replaced lang"
+to_be_rep.textContent = "replaced lang"
+to_be_rep.outerHTML = '<li> hardik bhai ki lang </li>'
+
+//method-2
+const third_child = document.querySelector('li:nth-child(3)');
+const newchild = document.createElement('li');
+const text_node = document.createTextNode('rishi bhai ki lang')
+newchild.append(text_node)
+third_child.replaceWith(newchild) ;
+
+//------------DELETING ELEMENTS--------
+const last = document.querySelector('li:last-child');
+last.remove() ;
+</script>
+</html>
