@@ -1,5 +1,25 @@
 {
-  "devDependencies": {
-    "nodemon": "^3.1.9"
-  }
+  "name": "coding",
+  "version": "1.0.0",
+  "description": "\"hardik learning backend\"",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/devhardik21/js_backend.git"
+  },
+  "keywords": [
+    "js",
+    "hardik",
+    "code"
+  ],
+  "author": "hardik shandilya",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/devhardik21/js_backend/issues"
+  },
+  "homepage": "https://github.com/devhardik21/js_backend#readme"
 }

@@ -1,0 +1,25 @@
+/* <---------------header-------------------> */
+#top{
+    display: flex;
+    justify-content: space-between;
+}
+#image{
+    height: 100px;
+    width: 200px;
+}
+
+/* ---------------carbon-footprint section---------------*/
+.carbon-footprint{
+
+    display: flex;
+    justify-content: space-evenly;
+}
+.cards{
+    border: 2px solid green;
+    height: 500px;
+    width: 500px;
+}
+h4{
+    text-align: center;
+}
+
